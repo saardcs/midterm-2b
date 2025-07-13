@@ -39,9 +39,9 @@ for qnum in questions_1_4:
 
     # Insert image after questions 1 and 2
     if qnum == 1:
-        st.image("row.png")
+        st.image("picture1.png")
     if qnum == 2:
-        st.image("column.png")
+        st.image("picture2.png")
 
 st.write("**5. Solve the 6x6 Sudoku puzzle using the numbers 1 to 6.**")
 
