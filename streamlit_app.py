@@ -115,30 +115,27 @@ st.markdown("""
 **Suppose that the five-character code has the following restrictions:**  
 - Numbers and letters  
 - Uppercase and lowercase letters  
-- Cannot repeat characters
 """)
 st.image("5ch.png")
 
 questions_11_15 = {
-    11: ("What characters can make up the code?",
-         ["a. 10 numbers", "b. 26 letters", "c. 10 numbers and 26 letters", "d. 10 numbers and 52 letters"],
-         answers["q11"]),
-    12: ("What sets of characters can the code contain?",
-         ["a. a-z (lowercase letters)", "b. 0-9 (numbers)", "c. A-Z (uppercase letters)", "d. All of the above"],
-         answers["q12"]),
-    13: ("How many possible characters are there for the first spot in the password?",
-         ["a. 60 possible letters and numbers", "b. 62 possible letters and numbers", 
-          "c. 61 possible letters and numbers", "d. 59 possible letters and numbers"],
+    11: ("What characters can make up the code?", 
+        ["a. 10 numbers", "b. 26 letters", "c. 10 numbers and 26 letters", "d. 10 numbers and 52 letters"], 
+        answers["q11"]),
+    12: ("What sets of characters can the code contain?", 
+        ["a. a-z (lowercase letters)", "b. 0-9 (numbers)", "c. A-Z (uppercase letters)", "d. All of the above"], 
+        answers["q12"]),
+    13: ("How many possible characters are there for the first spot in the password?", 
+         ["a. 60 possible letters and numbers", "b. 62 possible letters and numbers", "c. 61 possible letters and numbers", "d. 59 possible letters and numbers"], 
          answers["q13"]),
-    14: ("How many possible characters are there for the fifth spot in the password?",
-         ["a. 60 possible letters and numbers", "b. 58 possible letters and numbers", 
-          "c. 61 possible letters and numbers", "d. 59 possible letters and numbers"],
+    14: ("How many possible characters are there for the fifth spot in the password?", 
+         ["a. 60 possible letters and numbers", "b. 62 possible letters and numbers", "c. 61 possible letters and numbers", "d. 59 possible letters and numbers"], 
          answers["q14"]),
-    15: ("How many total password combinations are possible?",
+    15: ("How many total password combinations are possible?", 
          ["a. 44,261,653,680 possible combinations", 
           "b. 916,132,832 possible combinations", 
           "c. 776,520,240 possible combinations", 
-          "d. 13,388,280 possible combinations"],
+          "d. 13,388,280 possible combinations"], 
          answers["q15"]),
 }
 
@@ -149,31 +146,29 @@ for qnum in questions_11_15:
 st.markdown("""
 ### (Items 16-20)  
 **Suppose that the five-character code has the following restrictions:**  
-- Numbers and letters  
-- Uppercase letters ONLY
+- Numbers  
+- Cannot repeat characters
 """)
 st.image("5ch.png")
 
 questions_16_20 = {
-    16: ("What characters can make up the code?",
-         ["a. 10 numbers", "b. 26 letters", "c. 10 numbers and 26 letters", "d. 10 numbers and 52 letters"],
+    16: ("What characters can make up the code?", 
+         ["a. 10 numbers", "b. 26 letters", "c. 10 numbers and 26 letters", "d. 10 numbers and 52 letters"], 
          answers["q16"]),
-    17: ("What sets of characters can the code contain?",
-         ["a. a-z (lowercase letters)", "b. 0-9 (numbers)", "c. A-Z (uppercase letters)", "d. b and c"],
+    17: ("What sets of characters can the code contain?", 
+         ["a. a-z (lowercase letters)", "b. 0-9 (numbers)", "c. A-Z (uppercase letters)", "d. All of the above"], 
          answers["q17"]),
-    18: ("How many possible characters are there for the first spot in the password?",
-         ["a. 62 possible letters and numbers", "b. 26 possible letters and numbers", 
-          "c. 36 possible letters and numbers", "d. 10 possible letters and numbers"],
+    18: ("How many possible characters are there for the first spot in the password?", 
+         ["a. 52 possible letters and numbers", "b. 10 possible numbers", "c. 62 possible letters and numbers", "d. 9 possible numbers"], 
          answers["q18"]),
-    19: ("How many possible characters are there for the fifth spot in the password?",
-         ["a. 26 possible letters and numbers", "b. 22 possible letters and numbers", 
-          "c. 36 possible letters and numbers", "d. 32 possible letters and numbers"],
+    19: ("How many possible characters are there for the fifth spot in the password?", 
+         ["a. 52 possible letters and numbers", "b. 10 possible numbers", "c. 62 possible letters and numbers", "d. 6 possible numbers"], 
          answers["q19"]),
-    20: ("How many total password combinations are possible?",
-         ["a. 916,132,832 possible combinations", 
-          "b. 60,466,176 possible combinations", 
-          "c. 45,239,040 possible combinations", 
-          "d. 11,881,376 possible combinations"],
+    20: ("How many total password combinations are possible?", 
+         ["a. 44,261,653,680 possible combinations", 
+          "b. 380,204,032 possible combinations", 
+          "c. 100,000 possible combinations", 
+          "d. 30,240 possible combinations"], 
          answers["q20"]),
 }
 
