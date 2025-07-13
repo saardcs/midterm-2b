@@ -211,7 +211,7 @@ def grade_part1():
     
 def grade_block_towers():
     # Grading Q6 (tower permutations)
-    valid_towers = list(permutations(['Red', 'Blue', 'Yellow']))
+    valid_towers = list(permutations(['Red', 'Yellow', 'Green']))
     student_towers = []
 
     for i in range(6):
