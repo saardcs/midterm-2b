@@ -57,12 +57,12 @@ board = sudoku(default=puzzle)
 st.header("PART II: Counting Combinations I Puzzle (5pts)")
 st.write("**Instruction:** Given the colors below, make the possible combinations and answer the following questions.")
 
-st.image("rby.png")
+st.image("ryg.png")
 
 # Question 6: Interactive tower coloring
 st.write("### 6. Color the following tower of blocks with all the possible combinations you can make based on the statement above.")
 
-colors = ["", "Red", "Blue", "Yellow"]  # Empty option for unselected blocks
+colors = ["", "Red", "Yellow", "Green"]  # Empty option for unselected blocks
 tower_inputs = {}
 
 # Display 6 towers side by side, 3 blocks each
@@ -77,10 +77,10 @@ for i, col in enumerate(cols):
 
 # Questions 7–8
 questions_7_8 = {
-    7: ("How many three-block towers can you make if there is a restriction that red and blue blocks cannot be placed next to each other",
+    7: ("How many three-block towers can you make if there is a restriction that the red blocks cannot be at the top",
         ["a. 2", "b. 4", "c. 6", "d. 8"],
         answers["q7"]),
-    8: ("How many three-block towers can you make if there is a restriction that the red blocks cannot be at the top",
+    8: ("How many three-block towers can you make if there is a restriction that red and yellow blocks cannot be placed next to each other",
         ["a. 2", "b. 4", "c. 6", "d. 8"],
         answers["q8"]),
 }
@@ -220,7 +220,7 @@ def grade_block_towers():
             st.session_state.get(f"tower{i}_block1", ""),
             st.session_state.get(f"tower{i}_block2", "")
         ]
-        if all(c in ("Red", "Blue", "Yellow") for c in t) and len(set(t)) == 3:
+        if all(c in ("Red", "Yellow", "Green") for c in t) and len(set(t)) == 3:
             student_towers.append(tuple(t))
 
     # Count unique valid permutations
